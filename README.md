@@ -1,10 +1,3 @@
-# Hướng dẫn chạy dự án
-
-1. Clone dự án về máy.
-2. Mở terminal tại thư mục dự án.
-3. Chạy lệnh cài đặt thư viện:
-   composer install
-4. Cấu hình Database trong file BaseModel.php
-5. Chạy server ảo:
-   php -S localhost:8000
-   
+=======
+Người thực hiện: Nguyễn Trọng Đại D18CNPM2 23810310120
+>>>>>>> 13ef07c49796f272ad7d4e67bdc1fe9573f57f28
