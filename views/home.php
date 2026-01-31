@@ -3,35 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Trang chủ MVC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
-        .box { border: 1px solid #ccc; padding: 20px; display: inline-block; border-radius: 10px; }
+        body { margin-top: 50px; text-align: center; }
+        .box { border: 1px solid #ccc; padding: 30px; display: inline-block; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
         h1 { color: #2c3e50; }
         p { color: #e74c3c; font-weight: bold; }
-        /* Thêm style cho nút bấm đẹp hơn */
-        .btn-link {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .btn-link:hover { background-color: #2980b9; }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1><?php echo $message; ?></h1>
-        <hr>
-        <p>Thông tin sinh viên:</p>
-        <div>
-            <?php echo $studentInfo; ?>
+    <div class="container">
+        <div class="box">
+            <h1><?php echo $message; ?></h1>
+            <hr>
+            <p>Thông tin sinh viên:</p>
+            <div>
+                <?php echo $studentInfo; ?>
+            </div>
+            <br>
+            
+            <a href="?page=product-list" class="btn btn-primary btn-lg">
+                👉 Quản lý sản phẩm
+            </a>
         </div>
-
-        <br>
-        <a href="?page=products" class="btn-link">👉 Xem danh sách sản phẩm</a>
-        </div>
+    </div>
 </body>
 </html>
